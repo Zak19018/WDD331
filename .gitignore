@@ -1,5 +1,5 @@
-            node_modules
-            *.css
-            .cache
-            build
+node_modules
+*.css
+.cache
+build
 *.DS_Store
