@@ -2,61 +2,6 @@
 Bryce Dickson
 Matthew McCrary
 Zak Shaik */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@500&display=swap");
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, main {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 /*
 // color palette - these colors will be the color swatches of the Colors section
 
@@ -71,6 +16,7 @@ $color-5: #141414; // Eerie
 $success: #6fce72; // green
 $alert: red; // red
 */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@500&display=swap");
 .cd-color-swatch + b {
   color: #3D3D3D;
 }
@@ -266,23 +212,26 @@ nav.cd-primary-nav ul {
   font-size: 1.25em;
 }
 nav.cd-primary-nav ul li a {
-  color: #16DB65;
+  color: #d1d1d1;
   display: block;
   padding: 0.75em;
-  background-color: #3D3D3D;
+  background-color: #00A7E1;
   transition-property: color, background-color, font-weight;
   transition-duration: 500ms;
   border-radius: inherit;
 }
 nav.cd-primary-nav ul li a:hover {
+  color: #121212;
   font-weight: 600;
-  background-color: #121212;
+  background-color: #16DB65;
   transition: background-color 0ms;
+  text-decoration: underline;
 }
 nav.cd-primary-nav ul li a:active {
   font-weight: 600;
-  color: #00A7E1;
-  background-color: #121212;
+  color: #3D3D3D;
+  background-color: #d1d1d1;
+  text-decoration: underline;
 }
 nav.cd-primary-nav ul li:first-child {
   border-radius: 1.5em 1.5em 0 0;
@@ -296,11 +245,11 @@ nav.cd-secondary-nav ul {
   list-style-type: none;
 }
 nav.cd-secondary-nav ul li a {
-  color: #d1d1d1;
+  color: #00A7E1;
 }
 nav.cd-secondary-nav ul li a:hover {
   font-weight: 600;
-  color: #121212;
+  color: #16DB65;
   text-decoration: underline;
 }
 nav.cd-secondary-nav ul li a:active {
@@ -315,11 +264,11 @@ ul#cd-other-links {
   font-size: 0.8em;
 }
 ul#cd-other-links li a {
-  color: #d1d1d1;
+  color: #00A7E1;
 }
 ul#cd-other-links li a:hover {
   font-weight: 600;
-  color: #121212;
+  color: #16DB65;
   text-decoration: underline;
 }
 ul#cd-other-links li a:active {
