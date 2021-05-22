@@ -139,6 +139,53 @@ nav.cd-primary-nav ul {
 
 //Secondary Navigation
 
+nav.cd-secondary-nav ul {
+  font-family: sans-serif;
+  list-style-type: none;
+  
+  li {
+      a {
+        color: $color-3;
+      }
+      
+      a:hover {
+          font-weight: 600;
+          color: $color-1;
+          text-decoration: underline;
+      }
+
+      a:active {
+          font-weight: 600;
+          color: $color-2;     
+          text-decoration: underline; 
+      }
+  
+  }
+}
 
 
 //Other Navigation
+
+ul#cd-other-links {
+  font-family: sans-serif;
+  list-style-type: none;
+  font-size: 0.8em;
+  li {
+      a {
+        color: $color-3;
+      }
+      
+      a:hover {
+          font-weight: 600;
+          color: $color-1;
+          text-decoration: underline;
+      }
+
+      a:active {
+          font-weight: 600;
+          color: $color-2;     
+          text-decoration: underline; 
+      }
+  
+  }
+}

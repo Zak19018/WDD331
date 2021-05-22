@@ -1,3 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@500&display=swap");
+.cd-color-swatch + b {
+  color: #FFFFFF;
+}
+
+section#wireframes {
+  color: #FFFFFF;
+}
+
+/* -------------------------------- 
+
+xTypography
+
+-------------------------------- */
+/* -------------------------------- 
+
+xTypography 
+
+-------------------------------- */
+h1,
+h2 {
+  font-family: "Press Start 2P", cursive;
+  color: #FFFFFF;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.4em;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+    margin: 1em 0 1.4em;
+  }
+}
+
+section > h2::before {
+  /* number before each section title */
+  color: #171717;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: white;
+}
+p a {
+  color: #00A7E1;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}
+
 /* -------------------------------- 
 
 xBackground 
@@ -102,18 +177,78 @@ div h3 {
   color: #FFFFFF;
 }
 
+nav.cd-primary-nav ul {
+  width: 15em;
+  margin: auto;
+  text-align: center;
+  font-family: sans-serif;
+  list-style-type: none;
+  font-size: 1.25em;
+}
 nav.cd-primary-nav ul li a {
   color: #FFFFFF;
   display: block;
-  padding: 0.5em;
+  padding: 0.75em;
   background-color: #00A7E1;
-  list-style-type: none;
+  transition-property: color, background-color, font-weight;
+  transition-duration: 500ms;
+  border-radius: inherit;
+}
+nav.cd-primary-nav ul li a:hover {
+  font-weight: 600;
+  color: #141414;
+  background-color: #16DB65;
+  text-decoration: underline;
+  transition: background-color 0ms;
+}
+nav.cd-primary-nav ul li a:active {
+  font-weight: 600;
+  color: #141414;
+  background-color: #FFFFFF;
+  text-decoration: underline;
+}
+nav.cd-primary-nav ul li:first-child {
+  border-radius: 1.5em 1.5em 0 0;
+}
+nav.cd-primary-nav ul li:last-child {
+  border-radius: 0 0 1.5em 1.5em;
 }
 
-nav.cd-primary-nav ul {
-  width: 4em;
-  margin: auto;
-  text-align: center;
+nav.cd-secondary-nav ul {
+  font-family: sans-serif;
+  list-style-type: none;
+}
+nav.cd-secondary-nav ul li a {
+  color: #16DB65;
+}
+nav.cd-secondary-nav ul li a:hover {
+  font-weight: 600;
+  color: #00A7E1;
+  text-decoration: underline;
+}
+nav.cd-secondary-nav ul li a:active {
+  font-weight: 600;
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+ul#cd-other-links {
+  font-family: sans-serif;
+  list-style-type: none;
+  font-size: 0.8em;
+}
+ul#cd-other-links li a {
+  color: #16DB65;
+}
+ul#cd-other-links li a:hover {
+  font-weight: 600;
+  color: #00A7E1;
+  text-decoration: underline;
+}
+ul#cd-other-links li a:active {
+  font-weight: 600;
+  color: #FFFFFF;
+  text-decoration: underline;
 }
 
 /* -------------------------------- 
@@ -128,67 +263,6 @@ main > h1 {
   main > h1 {
     /* title goes into the header on big devices */
     color: #141414;
-  }
-}
-
-/* -------------------------------- 
-
-xTypography 
-
--------------------------------- */
-h1,
-h2 {
-  font-family: "Press Start 2P", cursive;
-  color: #FFFFFF;
-}
-
-h1 {
-  font-size: 2.4rem;
-  font-weight: 300;
-  line-height: 1.2;
-  margin: 0 0 0.4em;
-}
-@media only screen and (min-width: 768px) {
-  h1 {
-    font-size: 3.2rem;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  h1 {
-    font-size: 4rem;
-  }
-}
-
-h2 {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 1em 0;
-}
-@media only screen and (min-width: 768px) {
-  h2 {
-    font-size: 1.8rem;
-    margin: 1em 0 1.4em;
-  }
-}
-
-section > h2::before {
-  /* number before each section title */
-  color: #171717;
-}
-
-p {
-  font-size: 1.4rem;
-  line-height: 1.4;
-  color: white;
-}
-p a {
-  color: #00A7E1;
-  text-decoration: underline;
-}
-@media only screen and (min-width: 768px) {
-  p {
-    font-size: 1.6rem;
-    line-height: 1.6;
   }
 }
 
@@ -221,10 +295,10 @@ xButtons
   background: #82d485;
 }
 .btn.btn-alert {
-  background: #16DB65;
+  background: red;
 }
 .no-touch .btn.btn-alert:hover {
-  background: #22e972;
+  background: #ff1a1a;
 }
 .btn.btn-outline {
   color: #00A7E1;
@@ -282,8 +356,8 @@ input[type=text].success {
   box-shadow: 0 0 6px rgba(111, 206, 114, 0.2);
 }
 input[type=text].alert {
-  border-color: #16DB65;
-  box-shadow: 0 0 6px rgba(22, 219, 101, 0.2);
+  border-color: red;
+  box-shadow: 0 0 6px rgba(255, 0, 0, 0.2);
 }
 input[type=text]:focus {
   border-color: #00A7E1;
@@ -409,7 +483,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 a {
@@ -421,7 +495,7 @@ img {
 }
 
 input, textarea, select {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 1.6rem;
 }
 
