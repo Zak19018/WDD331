@@ -1,0 +1,12 @@
+// color palette - these colors will be the color swatches of the Colors section
+
+$color-1: #121212; // Rich Black - Main background color (recommended https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#dark-mode-colors)
+$color-2: #3D3D3D; // Onyx 
+$color-3: #d1d1d1; // White
+$color-4: #00A7E1; // Cerulean Blue
+$color-5: #16DB65; // Malachite Green
+
+// additional colors
+
+$success: $color-5; // Malachite Green
+$alert: #D70000; // red
