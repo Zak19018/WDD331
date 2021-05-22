@@ -10,8 +10,9 @@ xButtons
     box-shadow: none;
     border-radius: 0.25em;
     font: {
-      size: 1.4rem;
-      family: $secondary-font;
+      size: 1.6rem;
+      family: $primary-font;
+      weight: 500;
     }
     color: $color-3;
     padding: 0.6em 2.2em;
@@ -61,16 +62,4 @@ xButtons
   .cd-buttons .cd-box:nth-of-type(2) span {
     /* CSS class name color */
     color: $color-1;
-  }
-  
-  /* -------------------------------- 
-  
-  xIcons 
-  
-  -------------------------------- */
-  
-  .cd-icons li {
-    /* icons size */
-    width: 32px;
-    height: 32px;
   }

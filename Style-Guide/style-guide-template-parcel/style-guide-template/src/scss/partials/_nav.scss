@@ -20,7 +20,16 @@ header {
     li a {
       color: $color-5;
       border-color: lighten($color-2, 5%);
+      
+      &:hover {
+        background: $color-1;
+      }
+
+      &:active {
+        color: $color-4;
+      }
     }
+    
   
     @include MQ(M) {
       li a {
@@ -98,10 +107,10 @@ nav.cd-primary-nav ul {
     
     li {
         a {
-            color: $color-2;
+            color: $color-5;
             display: block;
             padding: 0.75em;
-            background-color: $color-1;
+            background-color: $color-2;
             transition-property: color, background-color, font-weight;
             transition-duration: 500ms;
             border-radius: inherit; 
@@ -109,17 +118,14 @@ nav.cd-primary-nav ul {
         
         a:hover {
             font-weight: 600;
-            color: $color-5;
-            background-color: $color-3;
-            text-decoration: underline;
+            background-color: $color-1;
             transition: background-color 0ms;
         }
 
         a:active {
             font-weight: 600;
-            color: $color-5;
-            background-color: $color-2;
-            text-decoration: underline;
+            color: $color-4;
+            background-color: $color-1;
         }
     
     }
