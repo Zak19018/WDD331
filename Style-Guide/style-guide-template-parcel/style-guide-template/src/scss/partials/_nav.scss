@@ -81,10 +81,56 @@ header {
     }
   }
 
+//Shared Navigation
 
-//Primrary Navigation
+div h3 {
+    color: $color-2;
+}
 
+//Primary Navigation
 
+nav.cd-primary-nav ul {
+    width: 15em;
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+    list-style-type: none;
+    font-size: 1.25em;
+    
+    li {
+        a {
+            color: $color-2;
+            display: block;
+            padding: 0.75em;
+            background-color: $color-1;
+            transition-property: color, background-color, font-weight;
+            transition-duration: 500ms;
+            border-radius: inherit; 
+        }
+        
+        a:hover {
+            font-weight: 600;
+            color: $color-5;
+            background-color: $color-3;
+            text-decoration: underline;
+            transition: background-color 0ms;
+        }
+
+        a:active {
+            font-weight: 600;
+            color: $color-5;
+            background-color: $color-2;
+            text-decoration: underline;
+        }
+    
+    }
+    li:first-child {
+        border-radius: 1.5em 1.5em 0 0;
+    }
+    li:last-child {
+        border-radius: 0 0 1.5em 1.5em;
+    }
+}
 
 //Secondary Navigation
 

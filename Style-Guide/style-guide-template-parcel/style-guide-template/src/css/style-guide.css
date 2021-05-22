@@ -98,6 +98,24 @@ header {
   border-color: #00A7E1;
 }
 
+div h3 {
+  color: #FFFFFF;
+}
+
+nav.cd-primary-nav ul li a {
+  color: #FFFFFF;
+  display: block;
+  padding: 0.5em;
+  background-color: #00A7E1;
+  list-style-type: none;
+}
+
+nav.cd-primary-nav ul {
+  width: 4em;
+  margin: auto;
+  text-align: center;
+}
+
 /* -------------------------------- 
 
 xPage title 
