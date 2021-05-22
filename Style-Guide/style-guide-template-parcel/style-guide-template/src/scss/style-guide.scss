@@ -3,12 +3,13 @@ Bryce Dickson
 Matthew McCrary
 Zak Shaik */
 
-@import 'partials/reset';
+//@import 'partials/reset';
 @import 'partials/prefix-mixins';
 @import 'partials/layout'; // responsive grid and media queries
 
 @import 'partials/colors';
 
+/*
 // color palette - these colors will be the color swatches of the Colors section
 
 $color-1: #00A7E1; // Cerulean Crayola - Action color
@@ -21,6 +22,7 @@ $color-5: #141414; // Eerie
 
 $success: #6fce72; // green
 $alert: red; // red
+*/
 
 .cd-color-swatch + b {
   color: $color-2;

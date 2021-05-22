@@ -107,25 +107,28 @@ nav.cd-primary-nav ul {
     
     li {
         a {
-            color: $color-5;
+            color: $color-3;
             display: block;
             padding: 0.75em;
-            background-color: $color-2;
+            background-color: $color-4;
             transition-property: color, background-color, font-weight;
             transition-duration: 500ms;
             border-radius: inherit; 
         }
         
         a:hover {
+            color: $color-1;
             font-weight: 600;
-            background-color: $color-1;
+            background-color: $color-5;
             transition: background-color 0ms;
+            text-decoration: underline;
         }
 
         a:active {
             font-weight: 600;
-            color: $color-4;
-            background-color: $color-1;
+            color: $color-2;
+            background-color: $color-3;
+            text-decoration: underline;
         }
     
     }
@@ -145,12 +148,12 @@ nav.cd-secondary-nav ul {
   
   li {
       a {
-        color: $color-3;
+        color: $color-4;
       }
       
       a:hover {
           font-weight: 600;
-          color: $color-1;
+          color: $color-5;
           text-decoration: underline;
       }
 
@@ -172,12 +175,12 @@ ul#cd-other-links {
   font-size: 0.8em;
   li {
       a {
-        color: $color-3;
+        color: $color-4;
       }
       
       a:hover {
           font-weight: 600;
-          color: $color-1;
+          color: $color-5;
           text-decoration: underline;
       }
 
