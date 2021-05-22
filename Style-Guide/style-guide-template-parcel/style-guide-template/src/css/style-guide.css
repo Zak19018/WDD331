@@ -5,7 +5,7 @@ xBackground
 -------------------------------- */
 body {
   /* this is the page background */
-  background-color: #FFFFFF;
+  background-color: #141414;
 }
 
 /* -------------------------------- 
@@ -15,9 +15,9 @@ xPatterns
 -------------------------------- */
 .cd-box {
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-  border: 1px solid #00A7E1;
+  border: 1px solid #3D3D3D;
   border-radius: 3px;
-  background: #FFFFFF;
+  background: #141414;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   padding: 6px;
 }
@@ -28,12 +28,12 @@ xNavigation
 
 -------------------------------- */
 header {
-  background-color: #3D3D3D;
+  background-color: #FFFFFF;
 }
 
 .cd-logo {
   /* logo box style */
-  background-color: #141414;
+  background-color: #00A7E1;
   width: 120px;
 }
 @media only screen and (min-width: 1024px) {
@@ -44,58 +44,58 @@ header {
 
 .cd-main-nav {
   /* main navigation background color - full screen on small devices */
-  background: #3D3D3D;
+  background: #FFFFFF;
 }
 .cd-main-nav li a {
-  color: #FFFFFF;
-  border-color: #4a4a4a;
+  color: #141414;
+  border-color: white;
 }
 @media only screen and (min-width: 1024px) {
   .cd-main-nav li a {
-    color: #a3a3a3;
+    color: white;
   }
   .cd-main-nav li a.selected {
-    color: #FFFFFF;
-    box-shadow: 0 2px 0 #141414;
+    color: #141414;
+    box-shadow: 0 2px 0 #00A7E1;
   }
   .cd-main-nav li a:hover {
-    color: #FFFFFF;
+    color: #141414;
   }
 }
 
 .cd-nav-trigger span {
   /* hamburger menu */
-  background-color: #FFFFFF;
+  background-color: #141414;
 }
 .cd-nav-trigger span::before, .cd-nav-trigger span::after {
   /* upper and lower lines */
-  background-color: #FFFFFF;
+  background-color: #141414;
 }
 
 .nav-is-visible .cd-nav-trigger span {
   /* hide line in the center on mobile when nav is visible */
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(20, 20, 20, 0);
 }
 .nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
   /* preserve visibility of upper and lower lines - close icon */
-  background-color: white;
+  background-color: #141414;
 }
 
 .cd-download {
   /* download button top-right visible on big devices */
-  background-color: #575757;
+  background-color: white;
 }
 .no-touch .cd-download:hover {
-  background-color: #636363;
+  background-color: white;
 }
 .cd-download span {
   /* tooltip */
-  background: #141414;
-  color: #FFFFFF;
+  background: #00A7E1;
+  color: #141414;
 }
 .cd-download span::before {
   /* right arrow color */
-  border-color: #141414;
+  border-color: #00A7E1;
 }
 
 /* -------------------------------- 
@@ -104,12 +104,12 @@ xPage title
 
 -------------------------------- */
 main > h1 {
-  color: #3D3D3D;
+  color: #FFFFFF;
 }
 @media only screen and (min-width: 1600px) {
   main > h1 {
     /* title goes into the header on big devices */
-    color: #FFFFFF;
+    color: #141414;
   }
 }
 
@@ -121,7 +121,7 @@ xTypography
 h1,
 h2 {
   font-family: "Open Sans", sans-serif;
-  color: #3D3D3D;
+  color: #FFFFFF;
 }
 
 h1 {
@@ -155,16 +155,16 @@ h2 {
 
 section > h2::before {
   /* number before each section title */
-  color: #006e95;
+  color: #171717;
 }
 
 p {
   font-size: 1.4rem;
   line-height: 1.4;
-  color: #7d7d7d;
+  color: white;
 }
 p a {
-  color: #141414;
+  color: #00A7E1;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -185,16 +185,16 @@ xButtons
   border-radius: 0.25em;
   font-size: 1.4rem;
   font-family: "Open Sans", sans-serif;
-  color: #FFFFFF;
+  color: #141414;
   padding: 0.6em 2.2em;
   cursor: pointer;
-  background: #141414;
+  background: #00A7E1;
 }
 .btn:focus {
   outline: none;
 }
 .no-touch .btn:hover {
-  background: #212121;
+  background: #00bafb;
 }
 .btn.btn-success {
   background: #6fce72;
@@ -209,13 +209,13 @@ xButtons
   background: #22e972;
 }
 .btn.btn-outline {
-  color: #141414;
+  color: #00A7E1;
   background: transparent;
-  box-shadow: inset 0 0 0 1px #141414;
+  box-shadow: inset 0 0 0 1px #00A7E1;
 }
 .no-touch .btn.btn-outline:hover {
-  color: #FFFFFF;
-  background: #141414;
+  color: #141414;
+  background: #00A7E1;
 }
 @media only screen and (min-width: 768px) {
   .btn {
@@ -225,7 +225,7 @@ xButtons
 
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */
-  color: #141414;
+  color: #00A7E1;
 }
 
 /* -------------------------------- 
@@ -246,9 +246,9 @@ xForm
 -------------------------------- */
 input[type=text],
 select {
-  border: 1px solid #00A7E1;
+  border: 1px solid #3D3D3D;
   border-radius: 0.25em;
-  background: #FFFFFF;
+  background: #141414;
 }
 input[type=text]:focus,
 select:focus {
@@ -268,8 +268,8 @@ input[type=text].alert {
   box-shadow: 0 0 6px rgba(22, 219, 101, 0.2);
 }
 input[type=text]:focus {
-  border-color: #141414;
-  box-shadow: 0 0 6px rgba(20, 20, 20, 0.2);
+  border-color: #00A7E1;
+  box-shadow: 0 0 6px rgba(0, 167, 225, 0.2);
 }
 
 input[type=radio],
@@ -309,7 +309,7 @@ input[type=checkbox] {
 .radio-label::before,
 .checkbox-label::before {
   left: 0;
-  border: 1px solid #00A7E1;
+  border: 1px solid #3D3D3D;
   box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
 }
 .radio-label::after,
@@ -329,7 +329,7 @@ input[type=checkbox] {
 
 input[type=radio]:checked + label::before,
 input[type=checkbox]:checked + label::before {
-  background-color: #3D3D3D;
+  background-color: #FFFFFF;
   border: none;
   box-shadow: none;
 }
@@ -840,22 +840,22 @@ section:nth-of-type(10) h2::before {
   padding: 0.6em 0;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch {
-  background: #141414;
+  background: #00A7E1;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch::before {
-  background: #212121;
+  background: #00bafb;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch::after {
-  background: #070707;
+  background: #0094c8;
 }
 .cd-colors li:nth-of-type(2) .cd-color-swatch {
-  background: #3D3D3D;
+  background: #FFFFFF;
 }
 .cd-colors li:nth-of-type(2) .cd-color-swatch::before {
-  background: #4a4a4a;
+  background: white;
 }
 .cd-colors li:nth-of-type(2) .cd-color-swatch::after {
-  background: #303030;
+  background: #f2f2f2;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch {
   background: #16DB65;
@@ -867,22 +867,22 @@ section:nth-of-type(10) h2::before {
   background: #14c45a;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch {
-  background: #00A7E1;
+  background: #3D3D3D;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch::before {
-  background: #00bafb;
+  background: #4a4a4a;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch::after {
-  background: #0094c8;
+  background: #303030;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch {
-  background: #FFFFFF;
+  background: #141414;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch::before {
-  background: white;
+  background: #212121;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch::after {
-  background: #f2f2f2;
+  background: #070707;
 }
 @media only screen and (min-width: 768px) {
   .cd-colors li {
@@ -916,7 +916,7 @@ section:nth-of-type(10) h2::before {
 /* xTypography section - basic style */
 .cd-typography h1::before {
   content: "Aa - ";
-  color: #141414;
+  color: #00A7E1;
 }
 
 .cd-buttons .cd-box:first-of-type {
