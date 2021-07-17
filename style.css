@@ -464,6 +464,28 @@ a:hover {
     text-align: left;
     border-radius: 15px 15px 0 0;
   }
+  .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 600px 250px 320px;
+        grid-template-rows: 600px 250px 320px;
+    height: 50%;
+  }
+  .design-selection {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .design-archives {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .zen-resources {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
   .design-selection,
   .design-archives,
   .zen-resources {

@@ -328,6 +328,24 @@ a:hover {
         
     }
 
+    .wrapper {
+        display: grid;
+        grid-template-rows: 600px 250px 320px;
+        height: 50%;
+    }
+
+    .design-selection {
+        grid-row: 1/2;
+    }
+
+    .design-archives {
+        grid-row: 2/3;
+    }
+
+    .zen-resources {
+        grid-row: 3/4;
+    }
+
     .design-selection,
     .design-archives,
     .zen-resources {
