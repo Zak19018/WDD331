@@ -10,6 +10,7 @@
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/typography";
+@import "partials/animation";
 
 /* basic elements */
 *,
@@ -23,21 +24,21 @@ html {
 	margin: 0;
 	padding: 0;
 	}
-
 body { 
 	line-height: 1.88889;
-	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
+	background: $color-5; 
 	margin: 0; 
 	padding: 0;
 	}
 p { 
-	margin-top: 0; 
-	text-align: justify;
+	margin: 0.5em 0; 
 	}
 h3 { 
 	letter-spacing: 1px; 
 	margin-bottom: 0; 
 	}
+
+
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
@@ -48,11 +49,12 @@ a:visited {
 	}
 a:hover, a:focus, a:active { 
 	text-decoration: underline; 
-	}
-abbr {
-	border-bottom: none;
+	color: $color-3;
 	}
 
 
+/* Adding styles here */
+
+	
 @import "partials/color";
 @import "partials/layout";
