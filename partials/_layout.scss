@@ -2,7 +2,6 @@ body {
     font-size: 70%;
 }
 
-
 header {
     text-align: center;
     padding: 15px;
@@ -113,7 +112,6 @@ a:hover {
 
 /* Medium breakpoint */
 @media only screen and (min-width: 720px) {
-
     h3 {
         padding-left: 5.3em;
         font-size: 1.6em;
@@ -163,7 +161,6 @@ a:hover {
 
 /* In-between breakpoint */
 @media only screen and (min-width: 1000px) {
-
     h2:after {
         float: right;
         content: url(controller.svg);
@@ -238,7 +235,6 @@ a:hover {
     }
 
     /* Grid layout */
-
     .intro {
         display: grid;
         margin: 0 auto;
@@ -330,7 +326,7 @@ a:hover {
 
     .wrapper {
         display: grid;
-        grid-template-rows: 600px 250px 320px;
+        grid-template-rows: repeat(3, auto);
         height: 50%;
     }
 
@@ -381,5 +377,39 @@ a:hover {
         width: 40%;
         margin-left: 30%;
         margin-top: 0;
+    }
+}
+
+/* Responsive sidebar adjustments to prevent overlapping */
+@media only screen and (min-width: 1280px) {
+    .participation {
+        width: 90%;
+    }
+    .benefits {
+        width: 90%;
+    }
+    .sidebar {
+        top: 1370px;
+    }
+}
+@media only screen and (min-width: 1360px) {
+    .participation {
+        width: 85%;
+    }
+    .benefits {
+        width: 85%;
+    }
+    .sidebar {
+        top: 1330px;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .sidebar {
+        top: 1300px;
+    }
+}
+@media only screen and (min-width: 1700px) {
+    .sidebar {
+        top: 1260px;
     }
 }

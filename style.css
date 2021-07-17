@@ -467,8 +467,8 @@ a:hover {
   .wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 600px 250px 320px;
-        grid-template-rows: 600px 250px 320px;
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
     height: 50%;
   }
   .design-selection {
@@ -520,6 +520,43 @@ a:hover {
     width: 40%;
     margin-left: 30%;
     margin-top: 0;
+  }
+}
+
+/* Responsive sidebar adjustments to prevent overlapping */
+@media only screen and (min-width: 1280px) {
+  .participation {
+    width: 90%;
+  }
+  .benefits {
+    width: 90%;
+  }
+  .sidebar {
+    top: 1370px;
+  }
+}
+
+@media only screen and (min-width: 1360px) {
+  .participation {
+    width: 85%;
+  }
+  .benefits {
+    width: 85%;
+  }
+  .sidebar {
+    top: 1330px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .sidebar {
+    top: 1300px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .sidebar {
+    top: 1260px;
   }
 }
 /*# sourceMappingURL=style.css.map */
