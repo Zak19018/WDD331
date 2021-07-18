@@ -55,9 +55,10 @@ p {
 .resources {
     width: 90%;
     margin-left: 10%;
-    text-align: right;
+    text-align: left;
     border-radius: 15px 0 0 15px;
     box-shadow: 1px 1px 10px lighten($color-1, 5%);
+    
 }
 
 abbr {
@@ -108,7 +109,6 @@ a:hover {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
-
 
 /* Medium breakpoint */
 @media only screen and (min-width: 720px) {
@@ -377,6 +377,13 @@ a:hover {
         width: 50%;
         margin: auto;
         margin-top: 0;
+    }
+
+    #zen-summary,
+    #design-selection,
+    #design-archives,
+    #zen-resources {
+	    backdrop-filter: blur(10px);
     }
 }
 

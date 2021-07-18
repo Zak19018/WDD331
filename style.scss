@@ -23,35 +23,34 @@
 html {
 	margin: 0;
 	padding: 0;
-	}
+}
 body { 
 	line-height: 1.88889;
 	background: $color-5 url(BG.svg) fixed repeat; 
 	margin: 0; 
 	padding: 0;
-	}
+}
 p { 
 	margin: 0.5em 0; 
-	}
+}
 h3 { 
 	letter-spacing: 1px; 
 	margin-bottom: 0; 
-	}
+}
 
 
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
-	}
+}
 a:visited { 
 	font-weight: bold; 
 	text-decoration: none; 
-	}
+}
 a:hover, a:focus, a:active { 
 	text-decoration: underline; 
 	color: $color-3;
-	}
-
+}
 
 /* Adding styles here */
 
